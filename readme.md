@@ -2,7 +2,7 @@
 
 Este projeto é uma animação interativa baseada na série de cronofotografia de Eadweard Muybridge de 1878, intitulada "The Horse in Motion".
 
-!["Sallie Gardner", owned by Leland Stanford; ridden by G. Domm, running at a 1.40 gait over the Palo Alto track, 19th June, 1878](Eadweard_Muybridge-Sallie_Gardner_1878.jpg)
+!["Sallie Gardner", owned by Leland Stanford; ridden by G. Domm, running at a 1.40 gait over the Palo Alto track, 19th June, 1878](assets/Eadweard_Muybridge-Sallie_Gardner_1878.jpg)
 
 Utilizando a lógica "if/else", a animação move-se apenas quando o utilizador pressiona o botão esquerdo do rato. Além disso, à medida que o cursor se desloca pelo ecrã, a estética visual altera-se através da lógica condicional: a posição horizontal altera os filtros.
 
