@@ -51,7 +51,7 @@ function draw() {
     fill(255);
     textAlign(CENTER);
     textSize(16);
-    text("Hold mouse button to gallop", width / 2, height / 2);
+    text("Hold mouse button to gallop", width / 2, 40);
     //font 'Courier New'
     textFont('Courier New');
   }
