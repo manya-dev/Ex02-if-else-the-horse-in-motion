@@ -1,12 +1,6 @@
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  background(255, 45, 200);
+function preload() {
+  for (let i = 0; i < TOTAL_FRAMES; i++) {
+    frames[i] = loadImage(`assets/frame_${i}.png`);
+  }
 }
 
-function draw() {
-  circle(mouseX, mouseY, 60);
-}
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
