@@ -39,7 +39,11 @@ function draw() {
 
   const frame = mouseIsPressed ? frames[currentFrame] : frames[TOTAL_FRAMES];
   const scaleFactor = min(width / frame.width, height / frame.height);
+
+  drawingContext.save();
+  drawingContext.filter = getCursorFilter();
   image(frame, width / 2, height / 2, frame.width * scaleFactor, frame.height * scaleFactor);
+  drawingContext.restore();
 
   if (mouseIsPressed) {
   //mouse pressed - animation
@@ -51,12 +55,28 @@ function draw() {
     fill(255);
     textAlign(CENTER);
     textSize(16);
-    text("Hold mouse button to gallop", width / 2, 40);
+    text("Hold mouse button to gallop", width / 2, height - 30);
     //font 'Courier New'
     textFont('Courier New');
   }
 
-  
+  textFont('Courier New');
+  fill(255);
+  textAlign(CENTER);
+  textSize(16);
+  text("Move mouse to change filters", width / 2, 30);
+}
+
+
+//filter change 
+function getCursorFilter() {
+  if (mouseX < width / 3) {
+    return "contrast(300%)";
+  } else if (mouseX < (width * 2) / 3) {
+    return "sepia(100%)";
+  } else {
+    return "grayscale(100%)";
+  }
 }
 
 
