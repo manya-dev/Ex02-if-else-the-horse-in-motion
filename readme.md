@@ -2,7 +2,7 @@
 
 Este projeto é uma animação interativa baseada na série de cronofotografia de Eadweard Muybridge de 1878, intitulada "The Horse in Motion".
 
-Utilizando a lógica "if/else", a animação move-se apenas quando o utilizador clica repetidamente com o rato, imitando o ritmo mecânico dos primeiros obturadores fotográficos. Além disso, ao mover o cursor pelo ecrã, a estética visual é alterada através da lógica condicional: a posição horizontal altera os filtros.
+Utilizando a lógica "if/else", a animação move-se apenas quando o utilizador pressiona o botão esquerdo do rato. Além disso, à medida que o cursor se desloca pelo ecrã, a estética visual altera-se através da lógica condicional: a posição horizontal altera os filtros.
 
 ### Etapas
 
