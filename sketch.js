@@ -34,7 +34,12 @@ async function setup() {
 
 //click animation with mouse pressed
 function draw() {
+  
   background(0);
+
+  const frame = mouseIsPressed ? frames[currentFrame] : frames[TOTAL_FRAMES];
+  const scaleFactor = min(width / frame.width, height / frame.height);
+  image(frame, width / 2, height / 2, frame.width * scaleFactor, frame.height * scaleFactor);
 
   if (mouseIsPressed) {
   //mouse pressed - animation
@@ -46,14 +51,12 @@ function draw() {
     fill(255);
     textAlign(CENTER);
     textSize(16);
-    text("Hold mouse button to gallop", width / 2, height - 40);
+    text("Hold mouse button to gallop", width / 2, height / 2);
     //font 'Courier New'
     textFont('Courier New');
   }
 
-  const frame = mouseIsPressed ? frames[currentFrame] : frames[TOTAL_FRAMES];
-  const scaleFactor = min(width / frame.width, height / frame.height);
-  image(frame, width / 2, height / 2, frame.width * scaleFactor, frame.height * scaleFactor);
+  
 }
 
 
